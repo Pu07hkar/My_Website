@@ -2,7 +2,7 @@ function Navbar() {
   return (
     <>
       <div>
-        <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0">
+        <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 z-50">
           <div className="navbar bg-base-100 flex-wrap md:flex-nowrap">
             <div className="navbar-start flex-1">
               {/* Hamburger Menu - Visible when width < 1150px */}
@@ -27,8 +27,8 @@ function Navbar() {
                   tabIndex={0}
                   className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
                 >
-                  <li><a className="text-xl">Home</a></li>
-                  <li><a className="text-xl">Course</a></li>
+                  <li><a href="/" className="text-xl">Home</a></li>
+                  <li><a href="/course" className="text-xl">Course</a></li>
                   <li><a className="text-xl">Contact</a></li>
                   <li><a className="text-xl">About</a></li>
                 </ul>
@@ -43,8 +43,8 @@ function Navbar() {
             {/* Center Links - Hidden when width < 1150px */}
             <div className="navbar-center hidden xl:flex">
               <ul className="menu menu-horizontal px-1">
-                <li><a className="text-xl">Home</a></li>
-                <li><a className="text-xl">Course</a></li>
+                <li ><a href="/" className="text-xl">Home</a></li>
+                <li><a href="/course" className="text-xl">Course</a></li>
                 <li><a className="text-xl">Contact</a></li>
                 <li><a className="text-xl">About</a></li>
               </ul>

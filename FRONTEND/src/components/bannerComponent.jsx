@@ -19,8 +19,12 @@ function Banner() {
             </p>
           </div>
         </div>
-        <div className="w-full order-1 md:w-1/2 mt-12 md:mt-25">
-        <img src={image} alt="" />
+        <div className="w-full order-1 md:w-1/2 mt-12 md:mt-30 pt-10">
+        <img 
+      src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNvbXB1dGVyfGVufDB8fDB8fHww"
+      alt="new"
+      />
+
         </div>
         
       </div>
