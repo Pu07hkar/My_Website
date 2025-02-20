@@ -1,8 +1,10 @@
+import Login from "./Login.jsx";
+
 function Navbar() {
   return (
     <>
       <div>
-        <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 z-50">
+        <div className="navbar bg-base-100 flex-wrap md:flex-nowrap max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 z-50">
           <div className="navbar bg-base-100 flex-wrap md:flex-nowrap">
             <div className="navbar-start flex-1">
               {/* Hamburger Menu - Visible when width < 1150px */}
@@ -73,7 +75,8 @@ function Navbar() {
 
               {/* Login Button - Adjusted for Small Screens */}
               <div>
-                <a className="btn sm:btn-sm md:btn-md">Login</a>
+                <a className="btn sm:btn-sm md:btn-md" onClick={()=>document.getElementById("my_modal_3").showModal()}>Login</a>
+                < Login/>
               </div>
             </div>
           </div>
